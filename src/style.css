@@ -1,3 +1,106 @@
-h1{
-    color: aliceblue;
+
+
+a, h1, h2, h3, button {
+  font-family: "Sofia Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
+
+.header { 
+    position: relative; 
+    width: 100%; 
+    height: 100vh; /* Висота на всю сторінку */ 
+    overflow: hidden; 
+  }
+  header img{
+    width: 69px;
+    height: 63px;
+    margin: 20px 0px 0px 100px;
+  }
+  header a{
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 14.7px;
+    font-weight: 500;
+  }
+  .header-video{
+    width: 100%;
+    height: 100%;
+  }
+  header button{
+    width: 7.3vw;
+    height: 4vh;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(30, 31, 34, 1);
+    font-size: 15.7px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .header-ul, .ul-informtion{
+    line-height: 1.5;
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-left: -100px;
+  }
+  .header-li, .li-informtion{
+    margin: -57px 80px 0px 0px;
+  }
+
+
+.video-background video { 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100vw; 
+  height: 100vh; 
+  object-fit: cover; /* Масштабує відео, щоб воно займало весь екран */ 
+  z-index: -2; /* Відео на фоні */ 
+  }
+.label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #394a56;
+  }
+  
+  .label-text {
+    margin-left: 16px;
+  }
+  
+  .toggle {
+    isolation: isolate;
+    position: relative;
+    height: 30px;
+    width: 60px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: -8px -4px 8px 0px #ffffff,
+      8px 4px 12px 0px #d1d9e6,
+      4px 4px 4px 0px #d1d9e6 inset,
+      -4px -4px 4px 0px #ffffff inset;
+  }
+  
+  .toggle-state {
+    display: none;
+  }
+  
+  .indicator {
+    height: 100%;
+    width: 200%;
+    background: #ecf0f3;
+    border-radius: 15px;
+    transform: translate3d(-75%, 0, 0);
+    transition: transform 0.4s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+    box-shadow: -8px -4px 8px 0px #ffffff,
+      8px 4px 12px 0px #d1d9e6;
+  }
+  
+  .toggle-state:checked ~ .indicator {
+    transform: translate3d(25%, 0, 0);
+  }
