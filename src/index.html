@@ -5,16 +5,19 @@
         <script src="script.js" defer></script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="icon" href="img/img1.png" type="image/png">
+        <title>Sphinx</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,352;1,352&display=swap');
+        
+           
         </style>
     </head>
-    <div class="header-video">
-        <header>  
-            <nav>
-                <img src="img/img1.png" alt="logo">
-                <nav>
+    <body>
+        <div class="header-video">
+            <header class="main-header">  
+                <nav class="nav-bar">
+                    <img src="img/img1.png" alt="logo" class="logo">
                     <ul class="ul-informtion header-ul">
                         <li class="li-informtion header-li"><a href="">ПРО НАС</a></li>
                         <li class="li-informtion header-li"><a href="">ГАЛЕРЕЯ</a></li>
@@ -22,29 +25,154 @@
                         <li class="li-informtion header-li"><a href="">АБОНЕМЕНТИ</a></li>
                         <li class="li-informtion header-li"><a href="">КОНТАКТИ</a></li>
                     </ul>
-                        <button>ЗАПИСАТИСЯ</button>
-                        <a href="">UA</a>
+                    <button class="signup-btn">ЗАПИСАТИСЯ</button>
+                    <div class="language-switcher">
+                        <a class="toggle-a" href="">UA</a>
                         <label class="label">
                             <div class="toggle">
                                 <input class="toggle-state" type="checkbox" name="check" value="check">
                                 <div class="indicator"></div>
                             </div>
                         </label>
-                        <a href="">EN</a>   
+                        <a class="toggle-a" href="">EN</a> 
+                    </div>
                 </nav>
-            <div class="video-background"> 
+            </header>
+            <div class="video-container"> 
                 <video autoplay loop muted playsinline> 
                     <source src="img/video1.mp4" type="video/mp4"> 
                 </video> 
             </div>
-            
-        </header>
-         
-    </div>
-    <body>
+        </div>
+        <div class="about-container">
+            <h1 class="about-title">ПРО НАС</h1>
+            <p class="about-text">
+                Спортивний клуб Sphinx – це місце, де сила, витривалість і дисципліна стають основою вашого успіху. Ми пропонуємо широкий спектр тренувальних програм, що підходять як для новачків, так і для досвідчених спортсменів. Наші сертифіковані тренери допоможуть вам досягти особистих цілей, незалежно від того, чи це поліпшення фізичної форми, підготовка до змагань або загальне оздоровлення. У клубі створені комфортні умови для тренувань, з сучасним обладнанням та мотиваційною атмосферою. Приєднуйтеся до Sphinx, щоб розкрити свій справжній спортивний потенціал!
+            </p>
+        </div>
+        <div class="about-coach">
+            <h1 class="coach-title">Наші Тренери</h1>
+            <div class="coach-container">
+                <div class="coach">
+                    <img src="img/coach1.jpg" alt="Тренер Филипчук Іван Іванович" class="coach-image">
+                    <div class="coach-content">
+                        <div class="coach-p">
+                            <p>Велика перемога – це результат тисячі маленьких перемог, здобутих на тренуваннях. Кожен день ти стаєш кращим, ніж був учора, і це поступове зростання робить тебе непереможним, коли настає час вийти на килим.</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="coach">
+                    <img src="img/coach2.jpg" alt="Тренер Коваленко Олександр Олександрович" class="coach-image">
+                    <div class="coach-content">
+                        <div class="coach-p">
+                            <p>Борець – це не просто спортсмен, це людина, яка вчиться підніматися після кожної поразки та долати свої страхи. Справжня сила не в тому, щоб ніколи не програвати, а в тому, щоб повертатися на килим знову і знову, незалежно від кількості падінь.</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="coach-h2">Филипчук Іван Іванович</h2>
+            </div>
+            <div >
+                <h2 class="coach2-h2">Коваленко Олександр Олександрович</h2>
+            </div>
+        </div>
         
+        <div>
+            <!-- Subscription Section -->
+            <div class="subscriptions">
+                <h1>АБОНЕМЕНТИ</h1>
+                <div class="subscription-cards">
+                    <div class="subscription-card">
+                    <h3>Стандартна</h3>
+                    <ul>
+                        <li>Три тренування на тиждень</li>
+                        <li>Група початкової підготовки спортсменів</li>
+                        <li>Супровід сертифікованих тренерів</li>
+                        <li>Групові заняття з однолітками</li>
+                        <li>Вхід в зал в зручний час</li>
+                    </ul>
+                    <div class="price">25 $</div>
+                    <button>Buy a subscription</button>
+                    </div>
+                    <div class="subscription-card">
+                    <h3>Преміум</h3>
+                    <ul>
+                        <li>П'ять тренувань на тиждень</li>
+                        <li>Просунута група спортсменів</li>
+                        <li>Супровід сертифікованих тренерів</li>
+                        <li>Доступ до всіх залів</li>
+                        <li>Зручний графік відвідувань</li>
+                        <li>Зручний графік відвідувань</li>
+                        
+                    </ul>
+                    <div class="price">29 $</div>
+                    <button>Buy a subscription</button>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <h1>ГАЛЕРЕЯ</h1>
+            <div class="grid-container">
+                
+                <div>
+                    <img class='grid-item grid-item-1'
+                        src='img/img2.png'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-2'
+                        src='img/img7.jpg'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-3'
+                        src='img/img4.jpg'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-4'
+                        src='img/img5.jpg'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-5'
+                        src='img/img6.jpg'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-6'
+                        src='img/img3.png'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-7'
+                        src='img/img8.jpg'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-8'
+                        src='img/img9.jpg'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-9'
+                        src='img/img10.jpg'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-10'
+                        src='img/img12.jpg'
+                        alt=''>
+                </div>
+                <div>
+                    <img class='grid-item grid-item-10'
+                        src='img/img13.jpg'
+                        alt=''>
+                </div>
+            </div>
+        </div>
     </body>
     <footer>
-        
     </footer>
 </html>
