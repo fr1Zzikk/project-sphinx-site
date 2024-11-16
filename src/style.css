@@ -24,7 +24,7 @@ a, h1, h2, h3, button {
 }
 
 .coach-title {
-  font-size: 2.5em;
+  font-size: 4.25em;
   margin-bottom: 40px;
   color: #ffffff;
 }
@@ -65,22 +65,23 @@ a, h1, h2, h3, button {
 
 .coach-h2 {
   text-align: left;
-  margin-left: 150px;
+  margin-left: 250px;
 }
 .coach2-h2 {
   text-align: right;
-  margin-left: -200px;
+  margin-left: -300px;
   margin-top: -30px;
-  margin-right: 150px;
+  margin-right: 300px;
 }
 
 
 .coach-p {
   text-align: left;
+  width: 390px;
 }
 
 .coach p {
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.6;
   color: #e0e0e0;
   margin-top: 15px;
@@ -94,9 +95,10 @@ a, h1, h2, h3, button {
 
 /* Стилі про нас */
 .about-title {
-  font-size: 2.5em;
+  font-size: 4.25em;
   margin-bottom: 20px;
   text-align: center;
+  color: #f47c20
 }
 
 .about-text {
@@ -143,7 +145,7 @@ html, body {
   background-color: rgba(30, 31, 34, 0.8);
   padding: 20px 5%;
   position: fixed;
-  width: 100%;
+  width: 99.1%;
   top: 0;
   z-index: 1;
 }
@@ -157,8 +159,9 @@ html, body {
 }
 
 .logo {
-  width: 50px;
+  width: 60px;
   height: auto;
+  margin-left: 30px;
 }
 
 .header-ul {
@@ -167,22 +170,24 @@ html, body {
   gap: 20px;
   margin: 0;
   flex-wrap: wrap;
+  margin-left: 220px;
 }
 
 .header-li a {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 500;
+  margin-left: 30px;
 }
 
 .signup-btn {
-  width: auto;
+  width: 9%;
   padding: 10px 20px;
   border-radius: 6px;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(30, 31, 34, 1);
-  font-size: 14px;
+  font-size: 1em;
   font-weight: 600;
   cursor: pointer;
   border: none;
@@ -250,7 +255,7 @@ html, body {
 .subscriptions h1 {
   color: rgba(217, 116, 3, 1);
   font-size: 68px;
-  padding: 30px 0px 0px 10px;
+  padding: 30px 0px 0px 46px;
   margin-bottom: 20px;
 }
 
@@ -273,8 +278,8 @@ html, body {
 }
 
 .subscription-card:hover{
-  border: 5px solid rgba(243, 130, 55, 1);
-  background-color: rgba(236, 240, 243, 1);
+  border: 5px solid rgba(217, 116, 3, 1);
+  background-color: rgba(50, 50, 50, 1);
   transition: background-color 0.8s, color 0.3s;
 }
 
@@ -314,8 +319,8 @@ html, body {
 }
 
 .subscription-card button:hover {
-  border: 2px solid rgba(243, 130, 55, 1);
-  background-color: rgba(243, 130, 55, 1);
+  border: 2px solid rgba(217, 116, 3, 1);
+  background-color: rgba(217, 116, 3, 1);
   color: #000;
 }
 
@@ -332,6 +337,10 @@ html, body {
 }
 .gallery{
   background-color: rgba(30, 31, 34, 1);
+}
+.gallery-title{
+  font-size: 4.25em;
+  padding-left: 95px;
 }
 .grid-container, h1{
   color: rgba(255, 255, 255, 1);
