@@ -19,7 +19,7 @@ a, h1, h2, h3, button {
   width: 100%;
   color: #ffffff;
   background-color: #1E1F22;
-  padding: 170px 5%;
+  padding: 90px 5%;
   text-align: center;
 }
 
@@ -131,6 +131,16 @@ a, h1, h2, h3, button {
 html, body {
   height: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+html, body, .subscriptions{
+  scroll-padding-top: 8em;
+}
+
+html, body, .about-coach{
+  scroll-padding-top: 0em;
 }
 
 .header-video{
@@ -249,7 +259,7 @@ html, body {
   background-color: rgba(18, 20, 20, 1);
   width: 100%;
   min-width: 400px;
-  padding: 50px 3%
+  padding: 50px 3%;
 }
 
 .subscriptions h1 {
@@ -293,7 +303,6 @@ html, body {
   font-size: 18px;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  list-style-type: none;
 }
 
 .subscription-card ul li {
@@ -356,6 +365,7 @@ html, body {
   columns: 5 200px;
   column-gap: 1.5rem;
   width: 90%;
+  padding-bottom: 70px;
   margin: 0 auto;
   div {
     width: 150px;
@@ -386,4 +396,106 @@ html, body {
       font-style: italic;
     }
   }
+}
+
+
+footer{
+  background-color: rgba(18, 20, 20, 1);
+  background-image: url("img/footer-img.png");
+  height: 600px;
+  padding: 20px 50px;
+  color: rgba(255, 255, 255, 1);
+  
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Загальна ширина контейнера */
+  margin: 0 auto;
+  padding: 150px 20px;
+  color: #ffffff;
+}
+
+.left-section,
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрування контенту по горизонталі */
+  text-align: center;
+}
+
+.logo-footer {
+  width: 180px;
+  height: 90px;
+  margin-bottom: 20px;
+}
+
+.logo-info a {
+  display: block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-links h3 {
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.footer-section-ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 180px; /* Відступ між колонками */
+  margin: 0 auto; /* Центрування по горизонталі */
+  max-width: 1920px;
+}
+
+.footer-section-ul-left,
+.footer-section-ul-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Вирівнювання тексту по центру кожної колонки */
+  gap: 20px; /* Відступ між пунктами списку */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer-section-ul li {
+  list-style: none;
+  margin: 10px; /* Забираємо зайві відступи */
+}
+
+.footer-section-ul a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1em;
+}
+.footer-address{
+  padding-bottom: 10px;
+}
+.footer-address img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.footer-address h4 {
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font: 1em;
+  text-align: center;
+}
+
+.footer-address p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 0.8em;
 }

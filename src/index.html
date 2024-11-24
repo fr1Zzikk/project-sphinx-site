@@ -1,89 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/img1.png" type="image/png">
-        <title>Sphinx</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,352;1,352&display=swap');
-        
-           
-        </style>
-    </head>
-    <body>
-        <div class="header-video">
-            <header class="main-header">  
-                <nav class="nav-bar">
-                    <img src="img/img1.png" alt="logo" class="logo">
-                    <ul class="ul-informtion header-ul">
-                        <li class="li-informtion header-li"><a href="">ПРО НАС</a></li>
-                        <li class="li-informtion header-li"><a href="">ГАЛЕРЕЯ</a></li>
-                        <li class="li-informtion header-li"><a href="">МАГАЗИН</a></li>
-                        <li class="li-informtion header-li"><a href="">АБОНЕМЕНТИ</a></li>
-                        <li class="li-informtion header-li"><a href="">КОНТАКТИ</a></li>
-                    </ul>
-                    <button class="signup-btn">ЗАПИСАТИСЯ</button>
-                    <div class="language-switcher">
-                        <a class="toggle-a" href="">UA</a>
-                        <label class="label">
-                            <div class="toggle">
-                                <input class="toggle-state" type="checkbox" name="check" value="check">
-                                <div class="indicator"></div>
-                            </div>
-                        </label>
-                        <a class="toggle-a" href="">EN</a> 
-                    </div>
-                </nav>
-            </header>
-            <div class="video-container"> 
-                <video autoplay loop muted playsinline> 
-                    <source src="img/video1.mp4" type="video/mp4"> 
-                </video> 
-            </div>
-        </div>
-        <div class="about-container">
-            <h1 class="about-title">ПРО НАС</h1>
-            <p class="about-text">
-                Спортивний клуб Sphinx – це місце, де сила, витривалість і дисципліна стають основою вашого успіху. Ми пропонуємо широкий спектр тренувальних програм, що підходять як для новачків, так і для досвідчених спортсменів. Наші сертифіковані тренери допоможуть вам досягти особистих цілей, незалежно від того, чи це поліпшення фізичної форми, підготовка до змагань або загальне оздоровлення. У клубі створені комфортні умови для тренувань, з сучасним обладнанням та мотиваційною атмосферою. Приєднуйтеся до Sphinx, щоб розкрити свій справжній спортивний потенціал!
-            </p>
-        </div>
-        <div class="about-coach">
-            <h1 class="coach-title">Наші Тренери</h1>
-            <div class="coach-container">
-                <div class="coach">
-                    <img src="img/coach1.jpg" alt="Тренер Филипчук Іван Іванович" class="coach-image">
-                    <div class="coach-content">
-                        <div class="coach-p">
-                            <p>Велика перемога – це результат тисячі маленьких перемог, здобутих на тренуваннях. Кожен день ти стаєш кращим, ніж був учора, і це поступове зростання робить тебе непереможним, коли настає час вийти на килим.</p>
-                        </div>    
-                    </div>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/img1.png" type="image/png">
+    <title>Sphinx</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,352;1,352&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="header-video">
+        <header class="main-header">
+            <nav class="nav-bar">
+                <img src="img/img1.png" alt="logo" class="logo">
+                <ul class="ul-informtion header-ul">
+                    <li class="li-informtion header-li"><a href="#pronas">ПРО НАС</a></li>
+                    <li class="li-informtion header-li"><a href="#subscriptions">АБОНЕМЕНТИ</a></li>
+                    <li class="li-informtion header-li"><a href="">МАГАЗИН</a></li>
+                    <li class="li-informtion header-li"><a href="#gallery">ГАЛЕРЕЯ</a></li>
+                    <li class="li-informtion header-li"><a href="#footer">КОНТАКТИ</a></li>
+                </ul>
+                <button class="signup-btn">ЗАПИСАТИСЯ</button>
+                <div class="language-switcher">
+                    <a class="toggle-a" href="">UA</a>
+                    <label class="label">
+                        <div class="toggle">
+                            <input class="toggle-state" type="checkbox" name="check" value="check">
+                            <div class="indicator"></div>
+                        </div>
+                    </label>
+                    <a class="toggle-a" href="">EN</a>
                 </div>
-                <div class="coach">
-                    <img src="img/coach2.jpg" alt="Тренер Коваленко Олександр Олександрович" class="coach-image">
-                    <div class="coach-content">
-                        <div class="coach-p">
-                            <p>Борець – це не просто спортсмен, це людина, яка вчиться підніматися після кожної поразки та долати свої страхи. Справжня сила не в тому, щоб ніколи не програвати, а в тому, щоб повертатися на килим знову і знову, незалежно від кількості падінь.</p>
-                        </div> 
+            </nav>
+        </header>
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="img/video1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div id="pronas" class="about-container">
+        <h1 class="about-title">ПРО НАС</h1>
+        <p class="about-text">
+            Спортивний клуб Sphinx – це місце, де сила, витривалість і дисципліна стають основою вашого успіху. Ми
+            пропонуємо широкий спектр тренувальних програм, що підходять як для новачків, так і для досвідчених
+            спортсменів. Наші сертифіковані тренери допоможуть вам досягти особистих цілей, незалежно від того, чи це
+            поліпшення фізичної форми, підготовка до змагань або загальне оздоровлення. У клубі створені комфортні умови
+            для тренувань, з сучасним обладнанням та мотиваційною атмосферою. Приєднуйтеся до Sphinx, щоб розкрити свій
+            справжній спортивний потенціал!
+        </p>
+    </div>
+    <div class="about-coach">
+        <h1 class="coach-title">Наші Тренери</h1>
+        <div class="coach-container">
+            <div class="coach">
+                <img src="img/coach1.jpg" alt="Тренер Филипчук Іван Іванович" class="coach-image">
+                <div class="coach-content">
+                    <div class="coach-p">
+                        <p>Велика перемога – це результат тисячі маленьких перемог, здобутих на тренуваннях. Кожен день
+                            ти стаєш кращим, ніж був учора, і це поступове зростання робить тебе непереможним, коли
+                            настає час вийти на килим.</p>
                     </div>
                 </div>
             </div>
-            <div>
-                <h2 class="coach-h2">Филипчук Іван Іванович</h2>
-            </div>
-            <div >
-                <h2 class="coach2-h2">Коваленко Олександр Олександрович</h2>
+            <div class="coach">
+                <img src="img/coach2.jpg" alt="Тренер Коваленко Олександр Олександрович" class="coach-image">
+                <div class="coach-content">
+                    <div class="coach-p">
+                        <p>Борець – це не просто спортсмен, це людина, яка вчиться підніматися після кожної поразки та
+                            долати свої страхи. Справжня сила не в тому, щоб ніколи не програвати, а в тому, щоб
+                            повертатися на килим знову і знову, незалежно від кількості падінь.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        
         <div>
-            <!-- Subscription Section -->
-            <div class="subscriptions">
-                <h1>АБОНЕМЕНТИ</h1>
-                <div class="subscription-cards">
-                    <div class="subscription-card">
+            <h2 class="coach-h2">Филипчук Іван Іванович</h2>
+        </div>
+        <div>
+            <h2 class="coach2-h2">Коваленко Олександр Олександрович</h2>
+        </div>
+    </div>
+
+    <div>
+        <!-- Subscription Section -->
+        <div id="subscriptions" class="subscriptions">
+            <h1>АБОНЕМЕНТИ</h1>
+            <div class="subscription-cards">
+                <div class="subscription-card">
                     <h3>Стандартна</h3>
                     <ul>
                         <li>Три тренування на тиждень</li>
@@ -94,8 +103,8 @@
                     </ul>
                     <div class="price">25 $</div>
                     <button>Buy a subscription</button>
-                    </div>
-                    <div class="subscription-card">
+                </div>
+                <div class="subscription-card">
                     <h3>Преміум</h3>
                     <ul>
                         <li>П'ять тренувань на тиждень</li>
@@ -104,75 +113,96 @@
                         <li>Доступ до всіх залів</li>
                         <li>Зручний графік відвідувань</li>
                         <li>Зручний графік відвідувань</li>
-                        
                     </ul>
                     <div class="price">29 $</div>
                     <button>Buy a subscription</button>
                 </div>
             </div>
         </div>
-        <div class="gallery">
+        <div id="gallery" class="gallery">
             <h1 class="gallery-title">ГАЛЕРЕЯ</h1>
             <div class="grid-container">
-                
+
                 <div>
-                    <img class='grid-item grid-item-1'
-                        src='img/img2.png'
-                        alt=''>
+                    <img class='grid-item grid-item-1' src='img/img2.png' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-2'
-                        src='img/img7.jpg'
-                        alt=''>
+                    <img class='grid-item grid-item-2' src='img/img7.jpg' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-3'
-                        src='img/img4.jpg'
-                        alt=''>
+                    <img class='grid-item grid-item-3' src='img/img4.jpg' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-4'
-                        src='img/img5.jpg'
-                        alt=''>
+                    <img class='grid-item grid-item-4' src='img/img5.jpg' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-5'
-                        src='img/img6.jpg'
-                        alt=''>
+                    <img class='grid-item grid-item-5' src='img/img6.jpg' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-6'
-                        src='img/img3.png'
-                        alt=''>
+                    <img class='grid-item grid-item-6' src='img/img3.png' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-7'
-                        src='img/img8.jpg'
-                        alt=''>
+                    <img class='grid-item grid-item-7' src='img/img8.jpg' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-8'
-                        src='img/img9.jpg'
-                        alt=''>
+                    <img class='grid-item grid-item-8' src='img/img9.jpg' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-9'
-                        src='img/img10.jpg'
-                        alt=''>
+                    <img class='grid-item grid-item-9' src='img/img10.jpg' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-10'
-                        src='img/img12.jpg'
-                        alt=''>
+                    <img class='grid-item grid-item-10' src='img/img12.jpg' alt=''>
                 </div>
                 <div>
-                    <img class='grid-item grid-item-10'
-                        src='img/img13.jpg'
-                        alt=''>
+                    <img class='grid-item grid-item-10' src='img/img13.jpg' alt=''>
                 </div>
             </div>
         </div>
-    </body>
-    <footer>
-    </footer>
+</body>
+<footer id="footer">
+    <div class="video-container1">
+        <div class="footer-container">
+            <!-- Логотип і контактні дані -->
+            <div class="left-section">
+              <div class="logo-info">
+                <img class="logo-footer" src="img/logo.png" alt="">
+                <a href="tel:+380954449593">+380 (95) 444 95 93</a>
+                <a href="tel:+380674255550">+380 (67) 425 55 50</a>
+              </div>
+              <div class="social-links">
+                <h3>НАШІ СОЦМЕРЕЖІ</h3>
+                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="img/telegram.png" alt="Telegram"></a>
+                <a class="viber-icon" href="#"><img src="img/viber (2).png" alt="Viber"></a>
+              </div>
+            </div>
+          
+            <!-- Навігація -->
+            <div class="footer-section-ul">
+              <ul class="footer-section-ul footer-section-ul-left">
+                <li><a href="#">ПРО НАС</a></li>
+                <li><a href="#">ГАЛЕРЕЯ</a></li>
+                <li><a href="#">ЗАПИСАТИСЯ</a></li>
+              </ul>
+              <ul class="footer-section-ul footer-section-ul-right">
+                <li><a href="#">МАГАЗИН</a></li>
+                <li><a href="#">КОНТАКТИ</a></li>
+                <li><a href="#">АБОНЕМЕНТИ</a></li>
+              </ul>
+            </div>
+          
+            <!-- Адреса -->
+            <div class="footer-address">
+              <img src="img/locate.png" alt="Локація">
+              <h4>ДЕ МИ ЗНАХОДИМОСЬ?</h4>
+              <p>
+                RUSKA STREET, 228A,<br>
+                CHERNIVTSI, CHERNIVTSI<br>
+                REGION, 58000 UA
+              </p>
+            </div>
+          </div>
+    </div>
+</footer>
+
 </html>
