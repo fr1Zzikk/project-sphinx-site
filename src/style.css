@@ -1,4 +1,4 @@
-a, h1, h2, h3, button {
+a, h1, h2, h3,  button {
   font-family: "Sofia Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -170,7 +170,7 @@ html, body, .about-coach{
 
 .logo {
   width: 60px;
-  height: auto;
+  height: 60px;
   margin-left: 30px;
 }
 
@@ -455,6 +455,7 @@ footer{
   gap: 180px; /* Відступ між колонками */
   margin: 0 auto; /* Центрування по горизонталі */
   max-width: 1920px;
+  margin-top: 50px;
 }
 
 .footer-section-ul-left,
@@ -488,7 +489,7 @@ footer{
 }
 
 .footer-address h4 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   font: 1em;
   text-align: center;
@@ -498,4 +499,5 @@ footer{
   text-align: left;
   line-height: 1.5;
   font-size: 0.8em;
+  margin-right: 35px;
 }
