@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="img/img1.png" type="image/png">
+    <title>Sphinx</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;600&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="loading-screen">
+        <div class="load-img">
+            <img src="img/logo.png" alt="Loading Logo">
+        </div>
+        <div class="loading-text">SPHINX</div>
+    </div>
+    
+    <header class="main-header">
+        <nav class="nav-bar">
+            <a href="en_language.html"><img src="img/img1.png" alt="logo" class="logo"></a>
+            <button class="burger-menu" aria-label="Toggle menu">☰</button>
+            <ul class="nav-menu hidden fade-in">
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#subscriptions">Subscriptions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#footer">Contacts</a></li>
+            </ul>
+            <button class="signup-btn" onclick="window.open('https://forms.gle/ZTtuLgBqP4cukH7C7', '_blank')">Sign up</button>
+            <div class="menu-footer hidden">
+                <div class="language-switcher">
+                    <a class="toggle-a" href="#">UA</a>
+                    <label class="label">
+                        <div class="toggle">
+                            <input class="toggle-state" type="checkbox" name="check" value="check">
+                            <div class="indicator"></div>
+                        </div>
+                    </label>
+                    <a class="toggle-a" href="#">EN</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Video Section -->
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="img/video1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- About Section -->
+    <div id="aboutus" class="about-container">
+        <h1 class="about-title">ABOUT US</h1>
+        <p class="about-text">
+            The Sphinx Sports Club is a place where strength, endurance, and discipline become the foundation of your success. We offer a wide range of training programs suitable for both beginners and experienced athletes. Our certified coaches will help you achieve your personal goals, whether it is improving your physical fitness, preparing for competitions, or overall wellness. The club provides comfortable training conditions with modern equipment and a motivating atmosphere. Join Sphinx to unlock your true athletic potential!
+        </p>
+    </div>
+    <!-- Coach Section -->
+    <div class="about-coach">
+        <h1 class="coach-title">Our Coaches</h1>
+        <div class="coach-container">
+            <div class="coach">
+                <img src="img/coach1.jpg" alt="Coach Filipchuk Ivan Ivanovych" class="coach-image">
+                <div class="coach-content">
+                    <p class="coach-description">A great victory is the result of thousands of small victories won in training. Every day you become better than you were yesterday, and this gradual growth makes you invincible when it’s time to step onto the mat.</p>
+                    <h2 class="coach-name">Filipchuk Ivan Ivanovych</h2>
+                </div>
+            </div>
+            <div class="coach">
+                <img src="img/coach2.jpg" alt="Coach Kovalenko Oleksandr Oleksandrovych" class="coach-image">
+                <div class="coach-content">
+                    <p class="coach-description">A wrestler is not just an athlete, but a person who learns to get up after every defeat and overcome their fears. True strength is not about never losing, but about coming back to the mat again and again, no matter how many times you fall.</p>
+                    <h2 class="coach-name">Kovalenko Oleksandr Oleksandrovych</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscription Section -->
+    <div id="subscriptions" class="subscriptions">
+        <h1>SUBSCRIPTIONS</h1>
+        <div class="subscription-cards">
+            <div class="subscription-card">
+                <h3>Standard</h3>
+                <ul>
+                    <li>Three workouts per week</li>
+                    <li>Beginner athlete group</li>
+                    <li>Certified coach guidance</li>
+                    <li>Group sessions with peers</li>
+                    <li>Access to the gym at a convenient time</li>
+                </ul>
+                <div class="price">25 $</div>
+                <button>Buy a subscription</button>
+            </div>
+            <div class="subscription-card">
+                <h3>Premium</h3>
+                <ul>
+                    <li>Five workouts per week</li>
+                    <li>Advanced athlete group</li>
+                    <li>Certified coach guidance</li>
+                    <li>Access to all gyms</li>
+                    <li>Flexible attendance schedule</li>
+                    <li>Flexible attendance schedule</li>
+                </ul>
+                <div class="price">29 $</div>
+                <button>Buy a subscription</button>
+            </div>
+        </div>
+    </div>
+    <div id="gallery" class="gallery">
+        <h1 class="gallery-title">GALLERY</h1>
+        <div class="grid-container">
+            <div>
+                <img class='grid-item grid-item-1' src='img/img2.png' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-2' src='img/img7.jpg' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-3' src='img/img4.jpg' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-4' src='img/img5.jpg' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-5' src='img/img6.jpg' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-6' src='img/img3.png' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-7' src='img/img8.jpg' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-8' src='img/img9.jpg' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-9' src='img/img10.jpg' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-10' src='img/img12.jpg' alt=''>
+            </div>
+            <div>
+                <img class='grid-item grid-item-10' src='img/img13.jpg' alt=''>
+            </div>
+        </div>
+    </div>
+
+    <!-- More sections here -->
+</body>
+<footer id="footer">
+    <div class="video-container1">
+        <div class="footer-container">
+            <!-- Logo and contact details -->
+            <div class="left-section">
+              <div class="logo-info">
+                <img class="logo-footer" src="img/logo.png" alt="">
+                <a href="tel:+380954449593">+380 (95) 444 95 93</a>
+                <a href="tel:+380674255550">+380 (67) 425 55 50</a>
+              </div>
+              <div class="social-links">
+                <h3>OUR SOCIAL MEDIA</h3>
+                <a href="https://www.instagram.com/sphinx_team_mma_cv?igsh=MWtxbDB5bHhvNjhrNw=="><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://t.me/sphinx_team_mma"><img src="img/telegram.png" alt="Telegram"></a>
+                <a href="https://invite.viber.com/?g2=AQBcm9s9a38XF0t1mjUPfag3mI%2FBSRwyA7nqQE87PTG%2BLIiFzhJ%2BYv9uo4vIbqa9"><img class="viber-icon"  src="img/viber.png" alt="Viber"></a>
+              </div>
+            </div>
+          
+            <!-- Navigation -->
+            <div class="footer-section-ul">
+              <ul class="footer-section-ul footer-section-ul-left">
+                <li><a href="#aboutus">ABOUT US</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#">SIGN UP</a></li>
+              </ul>
+              <ul class="footer-section-ul footer-section-ul-right">
+                <li><a href="https://www.instagram.com/sphinx_team_mma_magazine?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">SHOP</a></li>
+                <li><a href="#footer">CONTACTS</a></li>
+                <li><a href="#subscriptions">SUBSCRIPTIONS</a></li>
+              </ul>
+            </div>
+          
+            <!-- Address -->
+            <div class="footer-address">
+              <img src="img/locate.png" alt="Location">
+              <h4>WHERE ARE WE LOCATED?</h4>
+              <p>
+                <a href="https://maps.app.goo.gl/8mukQs2nf2QG6jit6" target="_blank" style="text-decoration: none; color: inherit;">
+                    RUSKA STREET, 228A,<br>
+                    CHERNIVTSI, CHERNIVTSI<br>
+                    REGION, 58000 UA
+                </a>
+            </p>
+            </div>
+          </div>
+    </div>
+</footer>
+
+</html>
